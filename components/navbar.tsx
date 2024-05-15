@@ -5,7 +5,7 @@ import { Search, Sun, User } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="bg-black w-full h-[60px] fixed top py-3">
+    <div className="w-full h-[60px] fixed top py-3">
       <Container>
         <nav className="flex items-center justify-between px-4">
           <Link
