@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="bg-black w-full h-[60px] fixed top py-3">
       <Container>
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between px-4">
           <Link
             href="/"
             className="text-white text-2xl font-bold flex items-center"
@@ -22,11 +22,11 @@ const Navbar = () => {
                 viewBox="0 0 338.044 338.045"
                 xmlSpace="preserve"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <g>
@@ -37,25 +37,24 @@ const Navbar = () => {
             </div>
             AnimeList
           </Link>
-          <div className="flex">
-            <div className="bg-white mr-2 flex items-center">
-              <input
-                type="search"
-                id="search-dropdown"
-                className="w-12"
-                placeholder="Search Mockups, Logos, Design Templates..."
-                required
-              />
-              <button
-                type="submit"
-                className=""
-              >
-                <Search className="w-6 h-6" />
-              </button>
+          <div className="relative uppercase font-bold text-sm items-center gap-48 hidden lg:flex">
+            <div className="text-white flex gap-8 items-center">
+              <div>Anime</div>
+              <div>Anime</div>
+              <div>Anime</div>
+              <div>Anime</div>
             </div>
+
+            <div className="flex items-center">
+              <input className="bg-white text-sm w-full h-[30px] rounded-full p-3" placeholder="Search"/>
+              <Search className="w-6 h-6 absolute right-2"/>
+            </div>
+          </div>
+          <div className="flex items-center">
             <div className="bg-white py-1 px-1 rounded-full mr-2">
               <Sun className="w-6 h-6" />
             </div>
+
             <Link href="/">
               <div className="bg-white py-1 px-1 rounded-full">
                 <User className="w-6 h-6" />
